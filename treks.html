@@ -77,12 +77,33 @@
         }
 
         .slide {
-            width: 100vw; /* Set width to 100% of viewport width */
+            width: 100vw;
             flex: 0 0 auto;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            position: relative;
         }
+
+        .slide-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .slide-title {
+          position: absolute;
+          top: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+          text-align: center;
+          font-size: 24px;
+      }
 
         #prev, #next {
             position: absolute;
@@ -104,13 +125,32 @@
 <body>
 
 <div id="slider-container">
-    <button id="prev" onclick="prevSlide()">❮</button>
+    
     <div id="slider">
-        <div class="slide" style="background-image: url('images/treks/annapurna.jpg');"></div>
-        <div class="slide" style="background-image: url('images/hotels/hotel1.jpg');"></div>
-        <div class="slide" style="background-image: url('images/hotels/hotel4.jpg');"></div>
+        <div class="slide" style="background-image: url('images/treks/annapurna.jpg');">
+          <div class="slide-title">Annapurna Base Camp</div>
+            <div class="slide-text">Annapurna Base Camp is situated in the Himalayas of Nepal, within the Annapurna Conservation Area, which is a protected area known for its diverse flora and fauna. The trek takes you to the base camp of Annapurna, one of the highest peaks in the world. The Annapurna Base Camp itself is situated at an altitude of about 4,130 meters (13,550 feet) above sea level. Trekkers usually acclimatize along the way to avoid altitude sickness. The trek is renowned for its breathtaking scenery, including panoramic views of Annapurna, Machapuchare (Fishtail), Dhaulagiri, Hiunchuli, and other surrounding peaks. The route also takes trekkers through charming Gurung villages, allowing them to experience the local culture and hospitality. </div>
+        </div>
+        <div class="slide" style="background-image: url('images/treks/mardi.jpg');">
+          <div class="slide-title">Mardi Himal Trek</div>
+            <div class="slide-text">The Mardi Himal Trek is located in the western part of Nepal, in the Annapurna region. The trek usually starts and ends in Pokhara, a popular tourist destination.  The trek generally takes about 6 to 10 days, depending on the specific itinerary and the trekker's pace. It is a shorter trek compared to some of the more established routes in the region. The Mardi Himal Trek offers diverse landscapes, including lush forests, terraced fields, and high alpine meadows. Trekkers can enjoy breathtaking views of Mardi Himal, Machapuchare (Fishtail), Annapurna South, Hiunchuli, and other neighboring peaks.</div>
+        </div>
+        <div class="slide" style="background-image: url('images/treks/gokyo.jpg');">
+          <div class="slide-title">Everest Gokyo Lake Trek</div>
+            <div class="slide-text">This begins with a breathtaking flight to Luka, where a half-day trek to Phakding is planned. During this trek, you will hike via fascinating Gokyo Lake, which impresses with its glittering, turquoise blue colour. However, the true reward is a top view from Gokyo Ri (5360 m), which is one of the most incredible viewpoints over Everest. Beyond the breathtaking scenery, you will experience the unique culture while visiting Sherpa village.</div>
+        </div>
+        <div class="slide" style="background-image: url('images/treks/uppermustang.jpg');">
+          <div class="slide-title">Upper Mustang Trek</div>
+            <div class="slide-text">The ancient kingdom of Mustang, which was forbidden to foreigners until 1992, is undoubtedly the most mythical region of Nepal. This altitude desert, hidden behind the mountains of the Nepalese Himalayas, offers an extraordinary playground for all trekkers eager for exceptional landscapes and authentic encounters. We walk on a path alternating steep valleys, mountain passes and plateaus, and we discover the exceptional natural sites of the region: fairy chimneys, cliffs and canyons without bottom, all dominated by a grand panorama, that of the huge chain of Annapurnas and Dhaulagiri. Without a doubt, it is a real adventure which you should try as soon as possible!</div>
+        </div>
+        <div class="slide" style="background-image: url('images/treks/everestcamp.jpg');">
+          <div class="slide-title">Everest Base Camp Trek</div>
+            <div class="slide-text">The Everest base camp trek is one of the most popular treks in Nepal. Apart from reaching the foot of glorious Mt Everest, you will have the opportunity to marvel at unforgettable views of the Solu Khumbu region. Also, this trek leads through Namche Bazar, a trading town between Tibet and the Sherpa, located at 3,440 m above sea level. Then follow the Dudh Koshi river through the valley. The final path leads through the picturesque forest near villages, and the trek ends in Luka, where you will have a chance to rest. This trip is for healthy and experienced hikers. Physical preparation and endurance activities before the trip are necessary.</div>
+        </div>
+
         <!-- Add more slides as needed -->
     </div>
+    <button id="prev" onclick="prevSlide()">❮</button>
     <button id="next" onclick="nextSlide()">❯</button>
 </div>
 
@@ -141,5 +181,6 @@
 
 </body>
 </html>
+
 
 
