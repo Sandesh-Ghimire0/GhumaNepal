@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ghuma Nepal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GhumaNepal</a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="mountains.html">Mountains</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="treks.html">Treks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="temples.html">Temples</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hotels
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="kathmandu_hotels.html">kathmandu</a></li>
+                  <li><a class="dropdown-item" href="pokhara_hotels.html">pokhara</a></li>
+                  <li><a class="dropdown-item" href="other_hotels.html">others</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery with Scroll and Descriptions</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: auto; /* Enable scrolling for the entire page */
+    }
+
+    .image-container {
+      width: 100vw; /* 100% of viewport width */
+      display: flex;
+      flex-direction: column; /* Stack images and descriptions vertically */
+      align-items: center; /* Center content horizontally */
+      padding: 20px; /* Add some padding for better aesthetics */
+    }
+
+    .image-item {
+      position: relative;
+      width: 100%;
+      margin-bottom: 10px; /* Add spacing between images and descriptions */
+    }
+
+    .image-item img {
+      width: 100%; /* Take up 100% of the container width */
+      height: auto; /* Maintain the aspect ratio */
+    }
+
+    .image-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.6); /* Semi-transparent background for readability */
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <div class="image-item">
+        <img src="images/pashupatinath.jpg" alt="Image 2">
+      <div class="image-description">
+        <p class="title">pashupatinath Temple</p>
+        <p>Pashupatinath Temple is one of the most revered Hindu temples in Nepal and is considered one of the holiest shrines dedicated to Lord Shiva. Located on the banks of the Bagmati River in the eastern part of Kathmandu, the capital city of Nepal, Pashupatinath is a significant religious and cultural site with a history that dates back thousands of years.  The main deity of Pashupatinath Temple is Lord Shiva, one of the principal deities in Hinduism. Shiva is worshipped here in the form of Pashupati, which means "Lord of all living beings." The temple complex is home to various other shrines and statues dedicated to different deities, including Vishnu, Parvati, Ganesh, and others. Maha Shivaratri: The festival of Maha Shivaratri (Great Night of Shiva) is celebrated with great enthusiasm at Pashupatinath. </p>
+      </div>
+    </div>
+    <!-- Add more image items here as needed -->
+    <div class="image-item">
+        <img src="images/boudanath.jpg" alt="Image 3">
+      <div class="image-description">
+        <p class="title">Boudanath Stupa</p>
+        <p>
+            Boudhanath Stupa, also known as Boudha or Bodnath, is one of the largest and most significant stupas in Nepal. It is located in the eastern part of Kathmandu, the capital city, and is a UNESCO World Heritage Site. Boudhanath holds great religious and cultural importance, particularly for followers of Tibetan Buddhism. Boudhanath is a significant pilgrimage site for Buddhists, especially those following the Tibetan Buddhist tradition. It is also a center for the Tibetan diaspora in Nepal, making it a hub for Tibetan culture, art, and commerce. The stupa is designed as a mandala, representing the Buddhist cosmos. The base of the stupa symbolizes the earth, the dome represents water, the spire stands for fire, the square tower is air, and the pinnacle represents ether or space. The entire structure symbolizes the five elements and the path to enlightenment.</p>
+      </div>
+    </div>
+    <div class="image-item">
+        <img src="images/pathibara.jpg" alt="Image 3">
+      <div class="image-description">
+        <p class="title">pathibara Temple</p>
+        <p>Pathibara Devi Temple, commonly known as Pathibhara Temple, is a significant Hindu pilgrimage site located in the Taplejung district of eastern Nepal. It is situated on a hill at an altitude of approximately 3,794 meters (12,448 feet) above sea level, providing stunning panoramic views of the surrounding mountains, hills, and valleys. The temple is dedicated to Goddess Pathibhara, a manifestation of the Hindu goddess Durga. Pilgrims and tourists often undertake a challenging trek to reach Pathibara Temple. The trek is not only a religious journey but also an opportunity to experience the natural beauty of the region. The trek to Pathibara is considered a part of the larger Kanchenjunga trekking route, providing trekkers with breathtaking views of the Kanchenjunga mountain range.</p>
+      </div>
+    </div>
+
+    <div class="image-item">
+        <img src="images/muktinath.jpg" alt="Image 3">
+      <div class="image-description">
+        <p class="title">Muktinath Temple</p>
+        <p>Muktinath Temple, located at an altitude of 3,710 meters (12,172 feet) in the Mustang district of Nepal, is a highly revered religious site for both Hindus and Buddhists. It is situated in the Himalayan region and holds immense cultural and spiritual significance. Muktinath, which means "the place of liberation" in Sanskrit, is a sacred pilgrimage site visited by devotees seeking spiritual cleansing and liberation from the cycle of birth and death. Muktinath is also an important pilgrimage site for Buddhists, particularly for followers of Tibetan Buddhism. The temple is regarded as a manifestation of Avalokiteshvara, the Bodhisattva of Compassion. Buddhists believe that the great sage Guru Rinpoche (Padmasambhava) mediated at Muktinath on his journey to Tibet.</p>
+      </div>
+    </div>
+    <div class="image-item">
+        <img src="images/budanilkantha.jpg" alt="Image 3">
+      <div class="image-description">
+        <p class="title">Budhanilkantha Temple</p>
+        <p>Budhanilkantha Temple, also known as the Sleeping Vishnu Temple, is a Hindu shrine located in the northern part of Kathmandu, the capital city of Nepal. This sacred temple is dedicated to Lord Vishnu, a principal deity in Hinduism. The unique feature of Budhanilkantha is a colossal statue of Lord Vishnu lying in a reclining position on a coiled serpent (Shesha Nag), which floats on a pond.  The idol is placed in a rectangular pond filled with water. The pond symbolizes the cosmic ocean, and the reclining Vishnu represents the deity's cosmic sleep or Yoganidra, from which the universe emerges. Devotees believe that the deity's presence in the pond brings prosperity and well-being.</p>
+      </div>
+    </div>
+    <div class="image-item">
+        <img src="images/symbhu.jpg" alt="Image 1">
+      <div class="image-description">
+        <p class="title">Swayambhunath Stupa</p>
+        <p>Swayambhunath, also known as the Monkey Temple, is an ancient stupa (Buddhist shrine) located atop a hill in the Kathmandu Valley of Nepal. It is one of the most sacred and iconic sites in the country, with a rich history dating back more than 2,500 years. The stupa is situated about 2 kilometers west of the Kathmandu Durbar Square and offers panoramic views of the Kathmandu Valley.v According to local legend, Swayambhunath was formed spontaneously from a lotus flower that bloomed in the ancient Kathmandu Valley lake. The stupa has withstood earthquakes and various natural disasters over the centuries, making it a symbol of resilience. Swayambhunath is listed as a UNESCO World Heritage Site and holds cultural and religious significance for both locals and visitors alike.</p>
+      </div>
+    </div>
+    <!-- Add more image items as necessary -->
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+

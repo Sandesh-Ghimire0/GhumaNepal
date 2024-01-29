@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ghuma Nepal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GhumaNepal</a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="mountains.html">Mountains</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="treks.html">Treks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="temples.html">Temples</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hotels
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="kathmandu_hotels.html">kathmandu</a></li>
+                  <li><a class="dropdown-item" href="pokhara_hotels.html">pokhara</a></li>
+                  <li><a class="dropdown-item" href="other_hotels.html">others</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout with Images and Descriptions</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: auto;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns, each taking up 1/2 of the screen width */
+      gap: 10px; /* Gap between grid items */
+      padding: 20px; /* Padding for better aesthetics */
+    }
+
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #ccc;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .description-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0; /* Initially hidden */
+      transition: opacity 0.3s ease;
+    }
+
+    .grid-item:hover .description-overlay {
+      opacity: 1; /* Show overlay on hover */
+    }
+
+    .description-text {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="images/mountains/everest.jpg" alt="Image 1">
+      <div class="description-overlay">
+        <p class="description-text">Name : Mount Everest</p>
+        <p class="description-text">Height: 8848m</p>
+        <p class="description-text">Location: Solukhumbhu</p>
+      </div>
+    </div>
+
+    <!-- Repeat for more grid items -->
+    <div class="grid-item">
+      <img src="images/mountains/kangchanjunga.jpg" alt="Image 2">
+      <div class="description-overlay">
+        <p class="description-text">Name : Kanchenjunga</p>
+        <p class="description-text">Height : 8586m</p>
+        <p class="description-text">Location : Taplejung</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <img src="images/mountains/manaslu.jpg" alt="Image 3">
+      <div class="description-overlay">
+        <p class="description-text">Name : Manaslu</p>
+        <p class="description-text">Height : 8156m</p>
+        <p class="description-text">Location : Gorkha</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/mountains/makalu.jpg" alt="Image 3">
+      <div class="description-overlay">
+        <p class="description-text">Name : Makalu</p>
+        <p class="description-text">Height : 8481m</p>
+        <p class="description-text">Location : Sankhuwasabha</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/mountains/annapurnamt.jpg" alt="Image 3">
+      <div class="description-overlay">
+        <p class="description-text">Name : Annapurna</p>
+        <p class="description-text">Height : 7937m</p>
+        <p class="description-text">Location : Kaski</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/mountains/lhotse.jpg" alt="Image 3">
+      <div class="description-overlay">
+        <p class="description-text">Name : Lhotse</p>
+        <p class="description-text">Height : 8516m</p>
+        <p class="description-text">Location : Solukhumbhu</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/mountains/dhaulagiri.jpg" alt="Image 3">
+      <div class="description-overlay">
+        <p class="description-text">Name : Dhaulagiri</p>
+        <p class="description-text">Height : 7268m</p>
+        <p class="description-text">Location : Myagdi</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="images/mountains/machhapuchare.jpg" alt="Image 3">
+      <div class="description-overlay">
+        <p class="description-text">Name : Machhapuchare</p>
+        <p class="description-text">Height : 6993m</p>
+        <p class="description-text">Location : Kaski</p>
+      </div>
+    </div>
+
+    <!-- Add more grid items as necessary -->
+
+  </div>
+</body>
+</html>
